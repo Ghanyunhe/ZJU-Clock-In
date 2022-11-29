@@ -7,15 +7,15 @@ on:
   watch:
     types: started
   schedule:
-    - cron: 3 */14 * * *
+    - cron: 5 */14 * * *
 
 jobs:
   ClockIn:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      #- name: Checkout
-       # uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Setup Python
         uses: actions/setup-python@v3.1.0
         with:
