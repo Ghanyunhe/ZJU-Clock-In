@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   schedule:
-    - cron: 2 */14 * * *
+    - cron: 3 */14 * * *
 
 jobs:
   ClockIn:
